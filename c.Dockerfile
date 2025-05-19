@@ -13,9 +13,9 @@ RUN useradd -m eyesim
 USER eyesim
 WORKDIR /home/eyesim
 RUN wget https://roblab.org/eyesim/ftp/EyeSim-1.5.2-Linux.tar.gz && \
-  wget https://roblab.org/eyesim/ftp/Eyesim-Examples.zip
+  wget https://roblab.org/eyesim/ftp/EyeSim-Examples.zip
 RUN tar -xzf EyeSim-1.5.2-Linux.tar.gz && rm EyeSim-1.5.2-Linux.tar.gz && \
-  unzip Eyesim-Examples.zip && rm Eyesim-Examples.zip 
+  unzip EyeSim-Examples.zip && rm EyeSim-Examples.zip 
 
 USER root
 WORKDIR /home/eyesim
